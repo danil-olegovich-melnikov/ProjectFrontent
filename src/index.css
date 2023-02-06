@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand-text{
+  margin-left: 8px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.company .card {
+  min-width: 25%;
+  max-width: 20rem;
+}
+
+.card {
+  border-radius: 2rem;
+  border: none;
+}
+
+.company .card img {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.company img {
+    border-radius: 2rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.trip .images {
+  width: 100%;
+}
+
+.search .card img {
+  border-radius: 2rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filter {
+  border-radius: 2rem;
+}
+
+.small {
+  font-size: 0.7rem;
+  color: #4f4f4f;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.home .banner-image {
+  background-size: cover;
+}
+
+.home .banner-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  /*position: relative;*/
+  /*z-index: 2;*/
+}
+
+.home .banner-content{
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.navbar {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
