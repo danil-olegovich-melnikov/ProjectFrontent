@@ -67,7 +67,7 @@ class App extends React.Component {
                         <div className="container-fluid container">
                             <Link to="/" className="navbar-brand">
                                 <img src={logo} alt="" height="25" className="d-inline-block align-text-top"/>
-                                <span className="navbar-brand-text">BeSmartTraveler</span>
+                                <span className="navbar-brand-text">BeSmartTraveler Тест</span>
                             </Link>
                             <div className="d-flex">
                                 <Link to={companies_url} className="nav-link mx-3">Компании</Link>
