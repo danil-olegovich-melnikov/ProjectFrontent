@@ -39,23 +39,23 @@ import {
 
 class App extends React.Component {
     async componentDidMount() {
-        await API.get("company").then(response => {
+        await API.get("companies/").then(response => {
             this.props.add(ADD_COMPANIES, response.data)
         })
-        await API.get("levels").then(response => {
-            this.props.add(ADD_LEVELS, response.data)
-        })
-        await API.get("locations").then(response => {
-            this.props.add(ADD_LOCATIONS, response.data)
-        })
-        await API.get("social_media").then(response => {
+        await API.get("companies/social_medias").then(response => {
             this.props.add(ADD_SOCIAL_MEDIA, response.data)
         })
-        await API.get("social_media_type").then(response => {
+        await API.get("companies/social_media_types").then(response => {
             this.props.add(ADD_SOCIAL_MEDIA_TYPE, response.data)
         })
-        await API.get("tripsg").then(response => {
+        await API.get("trips/").then(response => {
             this.props.add(ADD_TRIPS, response.data)
+        })
+        await API.get("trips/levels").then(response => {
+            this.props.add(ADD_LEVELS, response.data)
+        })
+        await API.get("trips/locations/").then(response => {
+            this.props.add(ADD_LOCATIONS, response.data)
         })
     }
 
