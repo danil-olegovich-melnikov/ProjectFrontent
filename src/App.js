@@ -15,11 +15,11 @@ import Auth from "./components/Auth";
 import {
     urlCompanies,
     urlUsers,
-    urlTripsLocations,
-    urlCompaniesSocial_media_types,
-    urlCompaniesSocial_medias,
+    urlLocations,
+    urlSocial_media_types,
+    urlSocial_medias,
     urlTrips,
-    urlTripsLevels
+    urlLevels
 } from './urls_backend'
 import logo from "./images/logo.png";
 import {add} from './actions';
@@ -50,19 +50,19 @@ class App extends React.Component {
         await API.get(urlCompanies).then(response => {
             this.props.add(ADD_COMPANIES, response.data)
         })
-        await API.get(urlCompaniesSocial_medias).then(response => {
+        await API.get(urlSocial_medias).then(response => {
             this.props.add(ADD_SOCIAL_MEDIA, response.data)
         })
-        await API.get(urlCompaniesSocial_media_types).then(response => {
+        await API.get(urlSocial_media_types).then(response => {
             this.props.add(ADD_SOCIAL_MEDIA_TYPE, response.data)
         })
         await API.get(urlTrips).then(response => {
             this.props.add(ADD_TRIPS, response.data)
         })
-        await API.get(urlTripsLevels).then(response => {
+        await API.get(urlLevels).then(response => {
             this.props.add(ADD_LEVELS, response.data)
         })
-        await API.get(urlTripsLocations).then(response => {
+        await API.get(urlLocations).then(response => {
             this.props.add(ADD_LOCATIONS, response.data)
         })
     }
