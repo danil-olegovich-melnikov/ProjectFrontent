@@ -1,0 +1,7 @@
+export const urlCompanies = 'companies/'
+export const urlUsers = 'users/'
+export const urlCompaniesSocial_medias = 'companies/social_medias/'
+export const urlCompaniesSocial_media_types = 'companies/social_media_types/'
+export const urlTrips = 'trips/'
+export const urlTripsLevels = 'trips/levels/'
+export const urlTripsLocations = 'trips/locations/'

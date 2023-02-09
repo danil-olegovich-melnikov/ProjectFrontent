@@ -12,7 +12,15 @@ import PageNotFound from "./components/PageNotFound";
 import Trip from "./components/Trip";
 import LocationView from "./components/LocationView";
 import Auth from "./components/Auth";
-
+import {
+    urlCompanies,
+    urlUsers,
+    urlTripsLocations,
+    urlCompaniesSocial_media_types,
+    urlCompaniesSocial_medias,
+    urlTrips,
+    urlTripsLevels
+} from './urls_backend'
 import logo from "./images/logo.png";
 import {add} from './actions';
 
@@ -39,22 +47,22 @@ import {
 
 class App extends React.Component {
     async componentDidMount() {
-        await API.get("companies/").then(response => {
+        await API.get(urlCompanies).then(response => {
             this.props.add(ADD_COMPANIES, response.data)
         })
-        await API.get("companies/social_medias").then(response => {
+        await API.get(urlCompaniesSocial_medias).then(response => {
             this.props.add(ADD_SOCIAL_MEDIA, response.data)
         })
-        await API.get("companies/social_media_types").then(response => {
+        await API.get(urlCompaniesSocial_media_types).then(response => {
             this.props.add(ADD_SOCIAL_MEDIA_TYPE, response.data)
         })
-        await API.get("trips/").then(response => {
+        await API.get(urlTrips).then(response => {
             this.props.add(ADD_TRIPS, response.data)
         })
-        await API.get("trips/levels").then(response => {
+        await API.get(urlTripsLevels).then(response => {
             this.props.add(ADD_LEVELS, response.data)
         })
-        await API.get("trips/locations/").then(response => {
+        await API.get(urlTripsLocations).then(response => {
             this.props.add(ADD_LOCATIONS, response.data)
         })
     }
